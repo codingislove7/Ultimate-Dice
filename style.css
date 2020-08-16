@@ -1,0 +1,16 @@
+.player,.computer{
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+    font-size: 10rem;
+}
+.draw{
+    background-color: rgb(192, 190, 190);
+}
+.win{
+    background-color: rgba(2, 245, 63, 0.952);
+}
+
+.noWin{
+    background-color: rgba(236, 16, 16, 0.952);
+}
