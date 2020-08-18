@@ -1,5 +1,5 @@
 // selectors
-const button = document.querySelector("button")
+const button = document.querySelector(".roll")
 const player = document.querySelector(".player")
 const computer = document.querySelector(".computer")
 const result = document.querySelector(".result")
@@ -89,11 +89,11 @@ function color(who) {
     }
 }
 // update history
-function history(rolls){
-const cli = document.createElement("cli")
-const pli = document.createElement("pli")
-cli.innerHTML = rolls[1]
-pli.innerHTML = rolls[0]
-computerHistory.appendChild(cli)
-playerHistory.appendChild(pli)
+function history(rolls) {
+    const cli = document.createElement("cli")
+    const pli = document.createElement("pli")
+    cli.innerHTML = rolls[1]
+    pli.innerHTML = rolls[0]
+    computerHistory.insertBefore(cli, computerHistory.childNodes[0]);
+    playerHistory.insertBefore(pli, playerHistory.childNodes[0]);
 }
