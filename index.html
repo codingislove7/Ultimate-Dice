@@ -2,88 +2,90 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Dice</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Dice</title>
 </head>
 
 <body>
+  <div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class=" btn btn-outline-secondary ml-3 mt-3  btn-sm " data-toggle="modal"
+      data-target="#exampleModal">
+      About
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">About</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-lead">
+            Simple Dice Game <br>
+            source : <a href="https://github.com/Super-DLT/Shopping-List" target="blank">Ultimate-Dic</a>
+            <br>code by
+            <a href="https://github.com/Super-DLT" target="blank">Behnam Sheykhe.</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
 
-     <!-- Button trigger modal -->
-     <button type="button" class=" btn btn-outline-secondary ml-3 mt-3  btn-sm " data-toggle="modal" data-target="#exampleModal">
-        About
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">About</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body text-lead">
-              Simple Dice Game <br>
-              source : <a href="https://github.com/Super-DLT/Shopping-List" target="blank">Ultimate-Dic</a>
-              <br>code by
-              <a href="https://github.com/Super-DLT" target="blank">Behnam Sheykhe.</a>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-    
-            </div>
           </div>
         </div>
       </div>
+    </div>
 
 
 
     <h1 class="text-center my-5">Ultimate Dice</h1>
     <div class="row text-center align-items-center mb-3">
- 
-        <div class="col  h2">Computer : <span class="computerSum">0</span></div>
-        <div class="col  h2">You : <span class="playerSum">0</span></div>
+
+      <div class="col  h2">Computer : <span class="computerSum">0</span></div>
+      <div class="col  h2">You : <span class="playerSum">0</span></div>
     </div>
     <div class="gameArea container">
-        <div class="row text-center align-items-center">
- 
-            <div class=" computer col align-self-center d-block h1"></div>
-            <div class="player col align-self-center d-block h1"></div>
-        </div>
+      <div class="row text-center align-items-center">
+
+        <div class=" computer col align-self-center d-block h1"></div>
+        <div class="player col align-self-center d-block h1"></div>
+      </div>
 
 
-        <div class="result text-center my-5 h3"> Result message</div>
+      <div class="result text-center my-5 h3"> Result message</div>
     </div>
     <div class="container">
-        <button class="btn btn-lg btn-primary  btn-block my-5 roll">Roll</button>
+      <button class="btn btn-lg btn-primary  btn-block my-5 roll">Roll</button>
     </div>
-    
+
     <hr>
     <h6 class="text-center my-5 h4">History</h6>
     <div class="row text-center align-items-center my-3">
-        <div class="col h5">Computer</div>
-        <div class="col h5">You</div>
+      <div class="col h5">Computer</div>
+      <div class="col h5">You</div>
     </div>
     <div class="row text-center my-5">
-        <ul class="col my-3 computerHistory list-group "></ul>
-        <ul class="col my-3 playerHistory list-group"></ul>
+      <ul class="col my-3 computerHistory list-group "></ul>
+      <ul class="col my-3 playerHistory list-group"></ul>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-    </script>
-    <script src="app.js"></script>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- Popper.js first, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+  </script>
+  <script src="app.js"></script>
 </body>
 
 </html>
